@@ -1,0 +1,61 @@
+{
+    "header": "Crystal's Hikes",
+    "hikes": {
+      "states": {
+        "california": [
+          {
+            "title": "Coastal Sights",
+            "city": "San Francisco",
+            "length": "9.3 Miles",
+            "hikeUrl": "/coast",
+            "credit": "Photo by Joseph Barrientos",
+            "imageUrl": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          },
+          {
+            "title": "Through the Park",
+            "city": "San Francisco",
+            "length": "5 Miles",
+            "hikeUrl": "/park",
+            "credit": "Photo by Claudia Lorusso",
+            "imageUrl": "https://images.unsplash.com/photo-1565086565717-351194b2488b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+          }
+        ],
+        "newyork": [
+          {
+            "title": "Historic Brownstones",
+            "city": "New York City",
+            "length": "1.2 Miles",
+            "hikeUrl": "#",
+            "credit": "Photo by Rachel Martin",
+            "imageUrl": "https://images.unsplash.com/photo-1542042238232-3a0b14425b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+          },
+          {
+            "title": "Big Apple, Big Bites",
+            "city": "New York City",
+            "length": "3.2 Miles",
+            "hikeUrl": "#",
+            "credit": "Photo by Peter Bond",
+            "imageUrl": "https://images.unsplash.com/photo-1515711127392-4c62a99c3393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2854&q=80"
+          }
+        ],
+        "pennsylvania": [
+          {
+            "title": "Hopewell Furnace National Historic Site",
+            "city": "Elverson",
+            "length": "8 Miles",
+            "hikeUrl": "#",
+            "credit": "Photo by Meriç Dağlı",
+            "imageUrl": "https://images.unsplash.com/photo-1541916710596-ee6af0a78e91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80"
+          },
+          {
+            "title": "Across the Entire Town",
+            "city": "Elverson",
+            "length": "1 Miles",
+            "hikeUrl": "#",
+            "credit": "Photo by Monica Bourgeau",
+            "imageUrl": "https://images.unsplash.com/photo-1570933657058-401caa810e60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80"
+          }
+        ]
+      }
+    }
+  }

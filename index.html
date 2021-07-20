@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+  <meta charset="utf-8" />
+  <title>My AMP Page</title>
+  <link rel="canonical" href="self.html" />
+  <meta name="viewport" content="width=device-width" />
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-render" src="https://cdn.ampproject.org/v0/amp-render-1.0.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <style amp-custom>
+        body {
+          background-color: #545454;
+          width: 100%;
+        }
+        article {
+          max-width: 800px;
+          min-width: 80%;
+          display: table;
+          margin: 0 auto;
+          padding: 10px;
+        }
+        header {
+          height: 70px;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          color: #545454;
+          background-color: #DDB556;
+        }
+        .hamburger {
+          top: 18px;
+          left: 20px;
+          position: absolute;
+          width: 40px;
+          height: 45px;
+        }
+        .hamburger span {
+          display: block;
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          background: #545454;
+          border-radius: 9px;
+        }
+        .hamburger span:nth-child(1) {
+          top: 0px;
+          transform-origin: left center;
+        }
+  
+        .hamburger span:nth-child(2) {
+          top: 15px;
+          transform-origin: left center;
+        }
+  
+        .hamburger span:nth-child(3) {
+          top: 30px;
+          transform-origin: left center;
+        }
+        .content {
+          padding: 2vw;
+          background-color: white;
+          margin: auto;
+          margin-bottom: 40px;
+          border-radius: 10px;
+          margin-top: 10px;
+          text-align: center;
+        }
+        .image-credit {
+          font-size: 10px;
+        }
+        .hike-display {
+          margin: 15px;
+        }
+        #sidebar {
+          width: 50%;
+          padding: 10px;
+        }
+        amp-nested-menu h1,
+        ul {
+          margin: 10px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      </style>
+</head>
+<body>
+  <header>
+    <h1>
+      The Hiking Blog
+    </h1>
+    <div class="hamburger" tabindex="1" role="button" on="tap:sidebar.toggle" aria-label="Click to open sidebar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <article>
+    <div class="content">
+      <h2>
+        Welcome to The Hiking Blog
+      </h2>
+      <h3>
+        Pick a route and get hiking!
+      </h3>
+      <amp-render layout="fixed-height" height="800" src="/hikes" key="hikes.states">
+        <template type="amp-mustache">
+            {{#california}}
+            <div class="hike-display">
+              <amp-img src="{{imageUrl}}" width="300" height="225"></amp-img>
+              <br />
+              <span class="image-credit">{{credit}}</span>
+              <br />
+              <a class="hike-title" href="{{hikeUrl}}">{{title}}</a>
+              <br />
+              <span class="image-credit">{{city}}</span>
+            </div>
+            {{/california}}
+            </template> 
+      </amp-render>
+      
+    </div>
+  </article>
+</body>
+</html>
